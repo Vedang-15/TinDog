@@ -1,0 +1,200 @@
+body {
+  font-family: 'Montserrat', sans-serif;  /*instead of writing this for all info and headings , we mention it in body itself*/
+  text-align: center;              /*instead of writing this for all section ids , we mention it in body itself*/
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color:white;
+  padding: 30px 0;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.colored-section {
+  background-color: #ff4c68; /* instaed of writing this in every alternate colored section, we put all colored sections in a class and specify color for that class*/
+}
+
+
+/* navbar */
+.navbar {
+  padding-left: 0;
+}
+
+.navbar-brand{
+  font-size: 40px;
+  font-weight:500;
+  margin: auto 0;
+  font-family: 'Ubuntu';   /* this will override the montserrat specified in body as classes have higher priority than html tags*/
+}
+
+.nav-item {
+  margin: auto 20px;
+  font-size: 18px;
+  font-weight: 400;
+
+}
+
+
+
+ /* title section */
+
+ #title {
+   overflow:hidden;     /* this helps in cutting iphone bottom part*/
+   text-align: left;
+ }
+
+.main_img {
+  padding-top: 40px;
+  margin-left: 20px;
+  width: 60%;
+  transform: rotate(25deg);
+  margin-bottom: -37%;          /* this helps in cutting iphone bottom part*/
+}
+
+.download-button{
+   margin-top: 10px;
+   margin-right: 12px;
+}
+
+.fab {
+  padding:0 2px 0;     /* padding of font awsome icons of class fab*/
+}
+
+
+/* media query */
+@media (max-width: 1028px) {
+  .main_img {
+  /*for media queries all parameters of main_img specified earlier will be valid and in addition to them , these below will also be applicable but only under specified condition of media query*/
+  transform: rotate(0);   /* restores iphone in normal view in mobile */
+  margin-bottom:10%;
+  }
+  #title {
+    text-align: center;
+  }
+
+}
+
+
+
+
+/* features */
+
+#features {
+  padding: 9% 15%;
+}
+
+.feat-img {
+  color: #ef8172;
+}
+
+.feat-img:hover {
+  color: #ff4c68;
+}
+
+.feat-head {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.feat-info {
+  color: #8f8f8f;
+}
+
+
+
+
+/* testimonials */
+
+
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.testimonials-head {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.testimonials-image {
+  width: 10%;
+  border-radius: 50%;
+  margin: 20px;
+
+}
+
+#press {
+  padding-bottom: 50px;
+}
+
+.press-image {
+  width:15%;
+  padding:20px 20px;
+}
+
+
+
+
+/* pricing section */
+
+#pricing{
+  padding: 100px;
+}
+
+.price-box {
+  padding: 3% 2%;
+}
+
+.price-head{
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.price-head-info {
+  color: #8f8f8f;
+
+}
+
+.breed {
+  font-weight: 500;
+}
+
+.price {
+  font-weight: 600;
+}
+
+
+
+
+/* cta section */
+
+#cta {
+  padding: 50px 22% 90px;
+}
+
+.cta-info {
+  padding-top: 30px;
+  padding-bottom:30px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: white;
+
+}
+
+#footer{
+  padding:8% 7% 6%;
+}
+
+.social-icons {
+  padding:0 10px 20px;
+}
